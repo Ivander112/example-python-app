@@ -18,5 +18,7 @@
         image: "{{image_p}}"
         interactive: true
         tty: true
+        published_ports:
+        - "4321"
         exposed_ports:
-          - 4321
+        - 4321
