@@ -4,7 +4,7 @@
     tasks:
     - name: Copy file to remote host
       copy:
-        src: /home/ivanz/Coding/btj-academy/raw_file/
+        src: /home/ivanz/Coding/btj-academy/raw_file
         dest: "{{dir_path}}"
     - name: Build container image
       docker_image:
