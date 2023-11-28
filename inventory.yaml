@@ -1,0 +1,6 @@
+all:
+  vars:
+    image_u: ubuntu:latest
+  hosts:
+    container-test-i:
+      ansible_host: 10.184.0.100

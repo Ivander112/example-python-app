@@ -1,0 +1,11 @@
+  - name: uji coba menjalankan docker container
+    hosts: container-test-i
+    become: false
+    tasks:
+    - docker_container:
+        name: ubuntu-ivan
+        image: "{{image_u}}"
+        interactive: true
+        tty: true
+        exposed_ports:
+          - 4321
