@@ -9,16 +9,18 @@
     - name: Build container image
       docker_image:
         name: "{{image_p}}"
+        source: "build"
         build:
           path: "{{dir_path}}"
         state: present
     - name: Deploy container
-      docker_container:
+      community.docker.docker_container:
         name: simple-task-ansible-i
         image: "{{image_p}}"
         interactive: true
         tty: true
-        ports:
-        - "8000:4321"
+        published_ports:
+          - "4321"
         exposed:
-        - 4321
+          - 4321
+        publish_all_ports: true
