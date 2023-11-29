@@ -88,7 +88,7 @@ Task kedua adalah mem-*build* docker image. Pada task ini diperlukan nama image 
 
 ### 5. Menjalankan Docker container
 
-Task ketiga adalah memjalankan docker conatiner. Pada task ini diperlukan iamge yang tadi digunakan. Pastikan container interactive lalu declarasikan juga port yang digunakan dengan dengan command ports:ports.
+Task ketiga adalah memjalankan docker conatiner. Pada task ini diperlukan image yang tadi dibuat. Pastikan container interactive lalu declarasikan juga port yang digunakan dengan dengan command ports:ports.
 
 ### 6. Uji coba curl
 
