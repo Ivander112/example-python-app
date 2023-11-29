@@ -14,13 +14,11 @@
           path: "{{dir_path}}"
         state: present
     - name: Deploy container
-      community.docker.docker_container:
+      docker_container:
         name: simple-task-ansible-i
         image: "{{image_p}}"
         interactive: true
         tty: true
         published_ports:
-          - "4321"
-        exposed:
-          - 4321
+          - "4321:4321"
         publish_all_ports: true

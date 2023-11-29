@@ -20,7 +20,5 @@
         interactive: true
         tty: true
         published_ports:
-          - "4321"
-        exposed:
-          - 4321
+          - "4321:4321"
         publish_all_ports: true
